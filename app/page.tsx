@@ -1,19 +1,17 @@
-import { Hero } from '@/components/home/Hero'
 import { RecentPosts } from '@/components/home/RecentPosts'
-import { QuickStats } from '@/components/home/QuickStats'
+import { Subscribe } from '@/components/home/Subscribe'
 
 export default function HomePage() {
   return (
-    <div className="space-y-16">
-      <Hero />
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <div className="lg:col-span-2">
-          <RecentPosts />
-        </div>
-        <div className="space-y-8">
-          <QuickStats />
-        </div>
-      </div>
+    <div className="space-y-12">
+      <section>
+        <h1 className="text-3xl font-bold mb-3">Welcome to my digital space</h1>
+        <p className="text-text-secondary">
+          I share my journey in software development, building interesting projects, and exploring new technologies. This is where I document my coding adventures and technical insights.
+        </p>
+      </section>
+      <Subscribe />
+      <RecentPosts />
     </div>
   )
 }

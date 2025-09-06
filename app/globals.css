@@ -1,27 +1,22 @@
-/* app/globals.css */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: #0A0B0D;
-    --background-secondary: #18191B;
-    --background-tertiary: #252629;
-    --text-primary: #FFFFFF;
-    --text-secondary: #A0A1A7;
-    --text-tertiary: #6B6C73;
-    --accent-blue: #0052FF;
-    --border-primary: #2A2B2F;
-  }
-
-  * {
-    @apply border-border-primary;
+    --background: 255 255 255;
+    --background-secondary: 247 247 247;
+    --foreground: 17 17 17;
+    --text-primary: 17 17 17;
+    --text-secondary: 85 85 85;
+    --accent-blue: 0 82 255;
+    --border-primary: 234 234 234;
+    --radius: 0.625rem;
   }
 
   body {
-    @apply bg-background text-text-primary;
-    font-feature-settings: "rlig" 1, "calt" 1;
+    background-color: rgb(var(--background));
+    color: rgb(var(--foreground));
+    @apply font-sans antialiased;
   }
 }
